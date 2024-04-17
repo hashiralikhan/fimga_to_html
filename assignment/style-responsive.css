@@ -1,0 +1,250 @@
+@media (max-width: 767px) {
+   .top-nav {
+      display: none;
+   }
+}
+
+@media (max-width: 991px) {
+   .top-nav {
+      display: none;
+   }
+}
+
+@media (max-width: 1024px) {
+   .top-nav {
+      width: 100%;
+      font-size: 12px;
+      height: 27px;
+      padding: 5px 40px 5px 61px;
+   }
+
+   .navbar {
+      width: 90%;
+      padding: 7px 17px;
+      font-size: 14px;
+   }
+
+   .navbar li a {
+      padding: 5px;
+   }
+
+   .navbar .logo {
+      width: 40px;
+      height: 30px;
+   }
+
+   .buttons-container li button a {
+      padding: 8px;
+      font-size: 12px;
+   }
+
+   .navbar ul {
+      margin-left: auto;
+   }
+}
+
+/* Your existing CSS */
+
+.toggle-btn {
+   background: none;
+   border: none;
+   cursor: pointer;
+   display: none;
+   /* Initially hide toggle button */
+}
+
+@media screen and (max-width: 768px) {
+   body h2 {
+      font-size: 20px;
+   }
+
+   .toggle-btn {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      gap: 5px;
+      /* Show toggle button on smaller screens */
+   }
+
+   .nav_cont,
+   .sec_main:after,
+   .sec_main:before,
+   .card_sec:after,
+   .card_sec:before,
+   .item1 img,
+   .item3 img {
+      display: none;
+      /* Initially hide navigation items on smaller screens */
+   }
+
+   .nav_cont.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 53px;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+   }
+
+   .cards,
+   .section3 {
+      display: block;
+   }
+
+   .nav_cont li {
+      width: 100%;
+      text-align: center;
+   }
+
+   section.sec_main {
+      flex-direction: column-reverse;
+   }
+
+   .image-column img {
+      width: 270px;
+      height: 450px;
+   }
+
+   button.toggle-btn img {
+      background: #2AD884;
+      padding: 5px;
+      border-radius: 20px;
+   }
+
+   .image_text p {
+      padding: 4px 15px;
+   }
+
+   .sec_main .bottom-text {
+      display: none;
+   }
+
+   .right1 .image_text {
+      right: -35px;
+      padding: 8px;
+   }
+
+   .right1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .right1 .image-column img {
+      width: 150px;
+      height: 300px;
+   }
+
+   .right1 .fras_text {
+      width: 30%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 5px;
+      font-size: 6px;
+      top: 70px;
+      left: -75%;
+   }
+
+   .right1 .image-column {
+      order: -1;
+   }
+
+   .image_text {
+      margin-top: 20px;
+      text-align: center;
+      width: 45%;
+      height: fit-content;
+   }
+
+   .image_text img {
+      width: 10px;
+      margin-bottom: 0;
+   }
+
+   .image_text h3 {
+      font-size: 10px;
+   }
+
+   .image_text p {
+      font-size: 8px;
+      /* Decrease font size for smaller screens */
+   }
+
+   .image_text:before {
+      right: 0;
+      top: -60px;
+      width: 120px;
+      height: 50px;
+   }
+
+   .dec_list_main .list_cta {
+      flex-direction: column;
+      align-items: center;
+      box-shadow: none;
+   }
+
+   .dec_list_main .list_cta .button_card {
+      background: #ffffff;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 30px;
+      width: 100%;
+   }
+
+   .dec_list_main .list_cta .dec_btn {
+      background: #2AD884;
+      box-shadow: none;
+      /* Remove shadow for the second button */
+   }
+
+   .breux_main .breux_sec2 img {
+      height: 400px;
+      width: 200px;
+      display: block;
+      margin: auto;
+   }
+
+   .breux_sec3 .bre_inner_main {
+      font-size: 12px;
+   }
+
+   .breux_sec3 .bre_inner_main img {
+      width: 50px;
+      height: 40px;
+      display: block;
+      margin: auto;
+   }
+
+   .slider_section {
+      border-radius: 30px;
+      margin: 10px;
+   }
+
+   .slider_section h2,
+   .discuton_sec_main h2,
+   .nos_main h2 {
+      font-size: 20px;
+      text-align: center;
+   }
+
+   .les_circle::before {
+      width: 120px;
+      height: 40px;
+   }
+
+   .dis_inner2 .red_circle:before {
+
+      width: 120px;
+      height: 40px;
+      bottom: -8px;
+      right: -10px;
+   }
+
+   .footer .copyright {
+      font-size: 14px;
+      margin-top: -35%;
+   }
+}
